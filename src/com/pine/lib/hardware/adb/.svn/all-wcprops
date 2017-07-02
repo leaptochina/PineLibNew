@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/ncar/!svn/ver/29/trunk/PineLib/src/com/pine/lib/hardware/adb
+END
+OnShellFinishListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/ncar/!svn/ver/3/trunk/PineLib/src/com/pine/lib/hardware/adb/OnShellFinishListener.java
+END
+AdbFunc.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/ncar/!svn/ver/29/trunk/PineLib/src/com/pine/lib/hardware/adb/AdbFunc.java
+END
+AdbShell.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/ncar/!svn/ver/29/trunk/PineLib/src/com/pine/lib/hardware/adb/AdbShell.java
+END

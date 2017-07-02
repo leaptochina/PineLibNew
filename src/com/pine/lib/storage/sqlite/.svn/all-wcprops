@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/ncar/!svn/ver/29/trunk/PineLib/src/com/pine/lib/storage/sqlite
+END
+SqliteBeanInterface.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/ncar/!svn/ver/3/trunk/PineLib/src/com/pine/lib/storage/sqlite/SqliteBeanInterface.java
+END
+CreateTableGo.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/ncar/!svn/ver/3/trunk/PineLib/src/com/pine/lib/storage/sqlite/CreateTableGo.java
+END
+SqlBeanExt.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/ncar/!svn/ver/3/trunk/PineLib/src/com/pine/lib/storage/sqlite/SqlBeanExt.java
+END
+TableOpr.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/ncar/!svn/ver/3/trunk/PineLib/src/com/pine/lib/storage/sqlite/TableOpr.java
+END
+SqliteManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/ncar/!svn/ver/29/trunk/PineLib/src/com/pine/lib/storage/sqlite/SqliteManager.java
+END

@@ -1,0 +1,92 @@
+package com.pine.lib.net.pic.by;
+
+import android.content.Context;
+import android.widget.ImageView;
+
+import com.pine.lib.R;
+import com.pine.lib.func.debug.G;
+import com.pine.lib.net.pic.SetPicInterface;
+import com.squareup.picasso.Picasso;
+
+/**
+ * 如果上下文变化，请重新构建这个类
+ */
+public class SetPicByPicasso implements SetPicInterface
+{
+	private Picasso picasso;
+
+	private int resId = R.drawable.loading_little_image;
+
+
+
+	public static SetPicByPicasso i(Context context)
+	{
+		return new SetPicByPicasso();
+	}
+
+
+	private SetPicByPicasso()
+	{
+
+	}
+
+
+	/**
+	 * 设置加载中的图标资源图标
+	 */
+	@Override
+	public SetPicInterface setLoadingPic(int resId)
+	{
+		this.resId = resId;
+		return this;
+	}
+
+
+	/**
+	 * 默认一律返回true
+	 */
+	@Override
+	public Boolean setPic(ImageView imageView, String url)
+	{
+		if ((imageView != null) && (url != null) && (!url.equals("")))
+		{
+			if (picasso == null)
+			{
+				picasso = Picasso.with(imageView.getContext());
+				picasso.setLoggingEnabled(G.getEnableGlobalDebug());
+				picasso.setIndicatorsEnabled(G.getEnableGlobalDebug());
+				picasso.setDebugging(G.getEnableGlobalDebug());
+
+			}
+
+			picasso.load(url).placeholder(resId).into(imageView);
+
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+
+
+	@Override
+	public Boolean setPic(ImageView imageView, int srcId)
+	{
+		if ((imageView != null))
+		{
+			if (picasso == null)
+			{
+				picasso = Picasso.with(imageView.getContext());
+			}
+
+			picasso.load(srcId).into(imageView);
+
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+}

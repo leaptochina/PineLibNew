@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "C:\\BEN\\GIT\\trade\\PineLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\in_from_up.xml",
+        "source": "C:\\BEN\\GIT\\trade\\PineLib\\build\\intermediates\\bundles\\debug\\res\\anim\\in_from_up.xml"
+    },
+    {
+        "merged": "C:\\BEN\\GIT\\trade\\PineLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\out_to_none.xml",
+        "source": "C:\\BEN\\GIT\\trade\\PineLib\\build\\intermediates\\bundles\\debug\\res\\anim\\out_to_none.xml"
+    },
+    {
+        "merged": "C:\\BEN\\GIT\\trade\\PineLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\in_from_down.xml",
+        "source": "C:\\BEN\\GIT\\trade\\PineLib\\build\\intermediates\\bundles\\debug\\res\\anim\\in_from_down.xml"
+    },
+    {
+        "merged": "C:\\BEN\\GIT\\trade\\PineLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\in_from_left.xml",
+        "source": "C:\\BEN\\GIT\\trade\\PineLib\\build\\intermediates\\bundles\\debug\\res\\anim\\in_from_left.xml"
+    },
+    {
+        "merged": "C:\\BEN\\GIT\\trade\\PineLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\in_from_none.xml",
+        "source": "C:\\BEN\\GIT\\trade\\PineLib\\build\\intermediates\\bundles\\debug\\res\\anim\\in_from_none.xml"
+    },
+    {
+        "merged": "C:\\BEN\\GIT\\trade\\PineLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\out_to_up.xml",
+        "source": "C:\\BEN\\GIT\\trade\\PineLib\\build\\intermediates\\bundles\\debug\\res\\anim\\out_to_up.xml"
+    },
+    {
+        "merged": "C:\\BEN\\GIT\\trade\\PineLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\out_to_right.xml",
+        "source": "C:\\BEN\\GIT\\trade\\PineLib\\build\\intermediates\\bundles\\debug\\res\\anim\\out_to_right.xml"
+    },
+    {
+        "merged": "C:\\BEN\\GIT\\trade\\PineLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\out_to_down.xml",
+        "source": "C:\\BEN\\GIT\\trade\\PineLib\\build\\intermediates\\bundles\\debug\\res\\anim\\out_to_down.xml"
+    },
+    {
+        "merged": "C:\\BEN\\GIT\\trade\\PineLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\in_from_right.xml",
+        "source": "C:\\BEN\\GIT\\trade\\PineLib\\build\\intermediates\\bundles\\debug\\res\\anim\\in_from_right.xml"
+    },
+    {
+        "merged": "C:\\BEN\\GIT\\trade\\PineLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\out_to_left.xml",
+        "source": "C:\\BEN\\GIT\\trade\\PineLib\\build\\intermediates\\bundles\\debug\\res\\anim\\out_to_left.xml"
+    }
+]

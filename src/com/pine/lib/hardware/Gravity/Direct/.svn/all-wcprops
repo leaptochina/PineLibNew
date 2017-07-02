@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/ncar/!svn/ver/29/trunk/PineLib/src/com/pine/lib/hardware/Gravity/Direct
+END
+OrientationEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/ncar/!svn/ver/29/trunk/PineLib/src/com/pine/lib/hardware/Gravity/Direct/OrientationEvent.java
+END
+OnOrientationChangeListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/ncar/!svn/ver/3/trunk/PineLib/src/com/pine/lib/hardware/Gravity/Direct/OnOrientationChangeListener.java
+END

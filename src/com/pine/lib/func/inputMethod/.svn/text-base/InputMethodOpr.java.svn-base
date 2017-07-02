@@ -1,0 +1,105 @@
+package com.pine.lib.func.inputMethod;
+
+import com.pine.lib.func.debug.M;
+
+import android.app.Activity;
+import android.content.Context;
+import android.view.View;
+import android.view.inputmethod.InputMethodManager;
+
+public class InputMethodOpr
+{
+	private Activity activity;
+	private InputMethodManager inputMethodManager;
+
+
+
+	private InputMethodOpr(Activity activity)
+	{
+		this.activity = activity;
+		M.i().addClass(this);
+		inputMethodManager = (InputMethodManager) activity
+				.getSystemService(Context.INPUT_METHOD_SERVICE);
+	}
+
+
+	public static InputMethodOpr i(Activity activity)
+	{
+		return new InputMethodOpr(activity);
+	}
+
+
+	/**
+	 * 打开输入法窗口: View v 传入一个根布局
+	 * 不可使用
+	 * @return
+	 */
+	public InputMethodOpr open(View v)
+	{
+
+		inputMethodManager.showSoftInput(v, InputMethodManager.SHOW_FORCED);
+		return this;
+	}
+
+
+	/**
+	 * 关闭输入法窗口: View v 传入一个根布局
+	 * 可以使用
+	 * @return
+	 */
+	public InputMethodOpr close(View v)
+	{
+		InputMethodManager imm = (InputMethodManager) v.getContext()
+				.getSystemService(Context.INPUT_METHOD_SERVICE);
+		if (imm.isActive())
+		{
+			imm.hideSoftInputFromWindow(v.getApplicationWindowToken(), 0);
+		}
+
+		// 接受软键盘输入的编辑文本或其它视图
+		// inputMethodManager.showSoftInput(v, InputMethodManager.SHOW_FORCED);
+		return this;
+	}
+
+
+	/**
+	 * 关闭输入法窗口: View v 传入一个根布局
+	 * 可以使用
+	 * @return
+	 */
+	public InputMethodOpr close()
+	{
+		inputMethodManager.hideSoftInputFromWindow(activity.getCurrentFocus()
+				.getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
+		// 接受软键盘输入的编辑文本或其它视图
+		// inputMethodManager.showSoftInput(v, InputMethodManager.SHOW_FORCED);
+		return this;
+	}
+
+
+	/**
+	 * 切换状态:打开则关闭 关闭则打开
+	 * 可以使用
+	 * @return
+	 */
+	public InputMethodOpr change()
+	{
+
+		inputMethodManager.toggleSoftInput(0,
+				InputMethodManager.HIDE_NOT_ALWAYS);
+		return this;
+	}
+
+
+	/**
+	 * 如果给定EditText 有输入法打开 isOpen返回true
+	 * 不可使用
+	 * @return
+	 */
+	public Boolean isOpen(View view)
+	{
+		return inputMethodManager.isActive(view);
+		// return inputMethodManager.isActive();
+	}
+
+}

@@ -1,0 +1,19 @@
+要求		Activity继承自QFActivity
+
+
+快速吐司方法 ： 
+	函数声明	T.t(String): void
+
+	
+错误输出：只有Debug级别的时候输出
+	函数声明 	E.e(String): Boolean 以MessageBox形式
+			E.w(String): Boolean 以吐司形式
+			
+上下文获取：
+	函数声明	A.c(): Context
+			A.a(): Activity
+	
+
+快速启动Activity：
+	函数声明	I.i(Class<?>): void
+	

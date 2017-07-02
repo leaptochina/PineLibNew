@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/ncar/!svn/ver/3/trunk/PineLib/src/com/pine/lib/net/fileBreakpoint
+END
+OnPercentChangeListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/ncar/!svn/ver/3/trunk/PineLib/src/com/pine/lib/net/fileBreakpoint/OnPercentChangeListener.java
+END
+FileDownloaderBreakpoint.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/ncar/!svn/ver/3/trunk/PineLib/src/com/pine/lib/net/fileBreakpoint/FileDownloaderBreakpoint.java
+END

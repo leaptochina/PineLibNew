@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/ncar/!svn/ver/3/trunk/PineLib/src/com/pine/lib/view/viewpager
+END
+CirclePageIndicator.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/ncar/!svn/ver/3/trunk/PineLib/src/com/pine/lib/view/viewpager/CirclePageIndicator.java
+END
+PageIndicator.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/ncar/!svn/ver/3/trunk/PineLib/src/com/pine/lib/view/viewpager/PageIndicator.java
+END
+LinePageIndicator.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/ncar/!svn/ver/3/trunk/PineLib/src/com/pine/lib/view/viewpager/LinePageIndicator.java
+END
+TabPageIndicator.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/ncar/!svn/ver/3/trunk/PineLib/src/com/pine/lib/view/viewpager/TabPageIndicator.java
+END
+IcsLinearLayout.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/ncar/!svn/ver/3/trunk/PineLib/src/com/pine/lib/view/viewpager/IcsLinearLayout.java
+END
+TitlePageIndicator.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/ncar/!svn/ver/3/trunk/PineLib/src/com/pine/lib/view/viewpager/TitlePageIndicator.java
+END
+ViewPageLine.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/ncar/!svn/ver/3/trunk/PineLib/src/com/pine/lib/view/viewpager/ViewPageLine.java
+END
+IconPageIndicator.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/ncar/!svn/ver/3/trunk/PineLib/src/com/pine/lib/view/viewpager/IconPageIndicator.java
+END
+IconPagerAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/ncar/!svn/ver/3/trunk/PineLib/src/com/pine/lib/view/viewpager/IconPagerAdapter.java
+END
+UnderlinePageIndicator.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/ncar/!svn/ver/3/trunk/PineLib/src/com/pine/lib/view/viewpager/UnderlinePageIndicator.java
+END

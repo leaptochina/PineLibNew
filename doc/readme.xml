@@ -1,0 +1,91 @@
+<!-- 在引用本lib之前，需要在配置如下内容 -->
+<!-- uses-sdk android:minSdkVersion="8" 必须大于8 -->
+<uses-permission android:name="android.permission.GET_TASKS" />
+<uses-permission android:name="android.permission.RECEIVE_SMS" />
+<uses-permission android:name="android.permission.READ_SMS" />
+<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.WRITE_SETTINGS" />
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+<uses-permission android:name="android.permission.VIBRATE" />
+<uses-permission android:name="android.permission.WAKE_LOCK" />
+<uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+<uses-permission android:name="android.permission.GET_ACCOUNTS" />
+<uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+<uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+  <receiver android:name="com.pine.lib.net.state.change.NetStateChangeBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.pine.lib.func.sms.SmsReceiver" >
+            <intent-filter android:priority="2147483647" >
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+        
+          <!-- 您从百度网站获取的APP KEY 无需修改-->
+        <meta-data
+            android:name="QuDao"
+            android:value="test" />
+        <meta-data
+            android:name="BaiduMobAd_STAT_ID"
+            android:value="000000" /> <!-- abcd1234 -->
+        <!-- 渠道商编号 无需修改 -->
+        <meta-data
+            android:name="BaiduMobAd_CHANNEL"
+            android:value="Test" />
+   
+   一个仿微信朋友圈图片的浏览界面     
+        
+        <activity
+            android:name="com.pine.lib.activitys.picBrowser.PicBrower"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        
+  定时广播会用到的
+      <receiver
+            android:name="com.pine.lib.func.taskschedule.OnBroadcastRev"
+            android:process=":remote" />      
+        
+        
+        以下内容分享将会使用
+<activity
+    android:name="cn.sharesdk.framework.ShareSDKUIShell"
+    android:configChanges="keyboardHidden|orientation|screenSize"
+    android:screenOrientation="portrait"
+    android:theme="@android:style/Theme.Translucent.NoTitleBar"
+    android:windowSoftInputMode="stateHidden|adjustResize" >
+
+    <intent-filter>
+
+        <data android:scheme="tencent100371282" />
+
+        <action android:name="android.intent.action.VIEW" />
+
+        <category android:name="android.intent.category.BROWSABLE" />
+
+        <category android:name="android.intent.category.DEFAULT" />
+    </intent-filter>
+
+</activity><!-- 微信分享回调 -->
+<activity
+    android:name=".wxapi.WXEntryActivity"
+    android:configChanges="keyboardHidden|orientation|screenSize"
+    android:exported="true"
+    android:screenOrientation="portrait"
+    android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+<!-- 易信分享回调 -->
+<activity
+    android:name=".yxapi.YXEntryActivity"
+    android:configChanges="keyboardHidden|orientation|screenSize"
+    android:exported="true"
+    android:screenOrientation="portrait"
+    android:theme="@android:style/Theme.Translucent.NoTitleBar" />

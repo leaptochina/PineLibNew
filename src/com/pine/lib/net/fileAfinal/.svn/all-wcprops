@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/ncar/!svn/ver/3/trunk/PineLib/src/com/pine/lib/net/fileAfinal
+END
+DownloadAfinalManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/ncar/!svn/ver/3/trunk/PineLib/src/com/pine/lib/net/fileAfinal/DownloadAfinalManager.java
+END
+OneDownloadTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/ncar/!svn/ver/3/trunk/PineLib/src/com/pine/lib/net/fileAfinal/OneDownloadTask.java
+END
+StateEnum.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/ncar/!svn/ver/3/trunk/PineLib/src/com/pine/lib/net/fileAfinal/StateEnum.java
+END

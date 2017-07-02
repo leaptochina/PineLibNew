@@ -1,0 +1,54 @@
+[
+    {
+        "merged": "C:\\BEN\\GIT\\trade\\PineLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pic_viewpage_fragment.xml",
+        "source": "C:\\BEN\\GIT\\trade\\PineLib\\build\\intermediates\\bundles\\debug\\res\\layout\\pic_viewpage_fragment.xml"
+    },
+    {
+        "merged": "C:\\BEN\\GIT\\trade\\PineLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\xlistview_header.xml",
+        "source": "C:\\BEN\\GIT\\trade\\PineLib\\build\\intermediates\\bundles\\debug\\res\\layout\\xlistview_header.xml"
+    },
+    {
+        "merged": "C:\\BEN\\GIT\\trade\\PineLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\xlistview_footer.xml",
+        "source": "C:\\BEN\\GIT\\trade\\PineLib\\build\\intermediates\\bundles\\debug\\res\\layout\\xlistview_footer.xml"
+    },
+    {
+        "merged": "C:\\BEN\\GIT\\trade\\PineLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\err_report_windows.xml",
+        "source": "C:\\BEN\\GIT\\trade\\PineLib\\build\\intermediates\\bundles\\debug\\res\\layout\\err_report_windows.xml"
+    },
+    {
+        "merged": "C:\\BEN\\GIT\\trade\\PineLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\debug_runtime_err_dialog.xml",
+        "source": "C:\\BEN\\GIT\\trade\\PineLib\\build\\intermediates\\bundles\\debug\\res\\layout\\debug_runtime_err_dialog.xml"
+    },
+    {
+        "merged": "C:\\BEN\\GIT\\trade\\PineLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\debug_runtime_notice_dialog.xml",
+        "source": "C:\\BEN\\GIT\\trade\\PineLib\\build\\intermediates\\bundles\\debug\\res\\layout\\debug_runtime_notice_dialog.xml"
+    },
+    {
+        "merged": "C:\\BEN\\GIT\\trade\\PineLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\activity_pic_brower.xml",
+        "source": "C:\\BEN\\GIT\\trade\\PineLib\\build\\intermediates\\bundles\\debug\\res\\layout\\activity_pic_brower.xml"
+    },
+    {
+        "merged": "C:\\BEN\\GIT\\trade\\PineLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\debug_runtime_flywindow.xml",
+        "source": "C:\\BEN\\GIT\\trade\\PineLib\\build\\intermediates\\bundles\\debug\\res\\layout\\debug_runtime_flywindow.xml"
+    },
+    {
+        "merged": "C:\\BEN\\GIT\\trade\\PineLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\message_box_large.xml",
+        "source": "C:\\BEN\\GIT\\trade\\PineLib\\build\\intermediates\\bundles\\debug\\res\\layout\\message_box_large.xml"
+    },
+    {
+        "merged": "C:\\BEN\\GIT\\trade\\PineLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\message_box.xml",
+        "source": "C:\\BEN\\GIT\\trade\\PineLib\\build\\intermediates\\bundles\\debug\\res\\layout\\message_box.xml"
+    },
+    {
+        "merged": "C:\\BEN\\GIT\\trade\\PineLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\wait_box_fullscreen.xml",
+        "source": "C:\\BEN\\GIT\\trade\\PineLib\\build\\intermediates\\bundles\\debug\\res\\layout\\wait_box_fullscreen.xml"
+    },
+    {
+        "merged": "C:\\BEN\\GIT\\trade\\PineLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\debug_runtime_key_dialog.xml",
+        "source": "C:\\BEN\\GIT\\trade\\PineLib\\build\\intermediates\\bundles\\debug\\res\\layout\\debug_runtime_key_dialog.xml"
+    },
+    {
+        "merged": "C:\\BEN\\GIT\\trade\\PineLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\wait_box_oneline.xml",
+        "source": "C:\\BEN\\GIT\\trade\\PineLib\\build\\intermediates\\bundles\\debug\\res\\layout\\wait_box_oneline.xml"
+    }
+]
