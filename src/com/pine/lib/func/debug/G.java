@@ -44,7 +44,7 @@ public class G
 	{
 		add("com.pine.nzbbs");
 		add("com.pine.lib.net.pic");
-		
+		add("com.lighthouse");
 
 		isInit = true;
 	}
