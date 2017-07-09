@@ -86,11 +86,7 @@ public class MIUIAuthorityAdmin {
 	/**
 	 * 打开MIUI权限管理界面(MIUI v5, v6)
 	 * 输入必须为Activity
-<<<<<<< HEAD
 	 *
-=======
-	 * 
->>>>>>> a18866bb3b201860626a03367ef95dd64cba40ff
 	 * @param context
 	 */
 	public static void openMiuiPermissionActivity(Activity context) {

@@ -61,7 +61,6 @@ public class PineActivity extends Activity implements OnNetworkChange,
 	}
 
 
-
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{
@@ -109,18 +108,6 @@ public class PineActivity extends Activity implements OnNetworkChange,
 		gh.setOnFlingListener(this);
 	}
 
-
-	/**
-	 * 请在子类重写 如果需要关闭
-	 * 程序会自动缩放界面 但是单位要使用PX
-	 * Please overwrite on subclass
-	 * It will auto zoom layout
-	 * @return
-	 */
-	public boolean enableAutoZoomByPx()
-	{
-		return true;
-	}
 
 	/**
 	 * 向左滑动 - 手势识别
