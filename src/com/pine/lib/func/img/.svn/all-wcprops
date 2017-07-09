@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/ncar/!svn/ver/3/trunk/PineLib/src/com/pine/lib/func/img
+END
+FDCT.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/ncar/!svn/ver/3/trunk/PineLib/src/com/pine/lib/func/img/FDCT.java
+END
+BitmapInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/ncar/!svn/ver/3/trunk/PineLib/src/com/pine/lib/func/img/BitmapInfo.java
+END
+AbImageUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/ncar/!svn/ver/3/trunk/PineLib/src/com/pine/lib/func/img/AbImageUtil.java
+END
+AbMathUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/ncar/!svn/ver/3/trunk/PineLib/src/com/pine/lib/func/img/AbMathUtil.java
+END
+AbViewUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/ncar/!svn/ver/3/trunk/PineLib/src/com/pine/lib/func/img/AbViewUtil.java
+END
+IFDCT.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/ncar/!svn/ver/3/trunk/PineLib/src/com/pine/lib/func/img/IFDCT.java
+END
+AbConstant.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/ncar/!svn/ver/3/trunk/PineLib/src/com/pine/lib/func/img/AbConstant.java
+END
+DCT.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/ncar/!svn/ver/3/trunk/PineLib/src/com/pine/lib/func/img/DCT.java
+END
+AbStrUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/ncar/!svn/ver/3/trunk/PineLib/src/com/pine/lib/func/img/AbStrUtil.java
+END
+AbDateUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/ncar/!svn/ver/3/trunk/PineLib/src/com/pine/lib/func/img/AbDateUtil.java
+END

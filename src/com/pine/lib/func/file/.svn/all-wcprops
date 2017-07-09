@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/ncar/!svn/ver/29/trunk/PineLib/src/com/pine/lib/func/file
+END
+ImgFile.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/ncar/!svn/ver/3/trunk/PineLib/src/com/pine/lib/func/file/ImgFile.java
+END
+DataCleanManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/ncar/!svn/ver/3/trunk/PineLib/src/com/pine/lib/func/file/DataCleanManager.java
+END
+BaseFile.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/ncar/!svn/ver/29/trunk/PineLib/src/com/pine/lib/func/file/BaseFile.java
+END
+AssistFile.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/ncar/!svn/ver/3/trunk/PineLib/src/com/pine/lib/func/file/AssistFile.java
+END

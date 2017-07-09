@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/ncar/!svn/ver/42/trunk/PineLib/res/values
+END
+intent.xml
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/ncar/!svn/ver/4/trunk/PineLib/res/values/intent.xml
+END
+viewpager__colors.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/ncar/!svn/ver/4/trunk/PineLib/res/values/viewpager__colors.xml
+END
+viewpager__defaults.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/ncar/!svn/ver/4/trunk/PineLib/res/values/viewpager__defaults.xml
+END
+viewpager__styles.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/ncar/!svn/ver/4/trunk/PineLib/res/values/viewpager__styles.xml
+END
+progresswheel_attrs.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/ncar/!svn/ver/4/trunk/PineLib/res/values/progresswheel_attrs.xml
+END
+strings.xml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/ncar/!svn/ver/4/trunk/PineLib/res/values/strings.xml
+END
+style_messagebox.xml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/ncar/!svn/ver/4/trunk/PineLib/res/values/style_messagebox.xml
+END
+styles.xml
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/ncar/!svn/ver/4/trunk/PineLib/res/values/styles.xml
+END
+dimens.xml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/ncar/!svn/ver/42/trunk/PineLib/res/values/dimens.xml
+END
+viewpager__attrs.xml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/ncar/!svn/ver/4/trunk/PineLib/res/values/viewpager__attrs.xml
+END
+all_color.xml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/ncar/!svn/ver/4/trunk/PineLib/res/values/all_color.xml
+END

@@ -1,0 +1,34 @@
+package com.pine.lib.hardware.info.Switch.gps;
+
+import android.location.LocationManager;
+
+import com.pine.lib.base.activity.A;
+import com.pine.lib.hardware.info.Switch.SwitchChangeInterface;
+
+public class GPS implements SwitchChangeInterface
+{
+
+	@Override
+	public Boolean isOpen()
+	{
+		LocationManager alm = (LocationManager) A.c()
+				.getSystemService("location");
+
+		return alm.isProviderEnabled("gps");
+	}
+
+	@Override
+	public Boolean openThis()
+	{
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Boolean closeThis()
+	{
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

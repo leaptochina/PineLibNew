@@ -1,0 +1,80 @@
+package com.pine.lib.net.pic.by;
+
+import afinal.FinalBitmap;
+import android.content.Context;
+import android.widget.ImageView;
+
+import com.pine.lib.R;
+import com.pine.lib.net.pic.SetPicInterface;
+
+/**
+ * 如果上下文变化，请重新构建这个类
+ */
+public class SetPicByAfinal implements SetPicInterface
+{
+	private FinalBitmap bitmap;
+	private Context context;
+	private int resId = R.drawable.loading_little_image;
+
+
+
+	public static SetPicByAfinal i(Context context)
+	{
+		return new SetPicByAfinal();
+	}
+
+
+	private SetPicByAfinal()
+	{
+		
+	}
+
+
+	/**
+	 * 设置加载中的图标资源图标
+	 */
+	@Override
+	public SetPicInterface setLoadingPic(int resId)
+	{
+		this.resId = resId;
+		return this;
+	}
+
+
+	@Override
+	public Boolean setPic(ImageView imageView, String url)
+	{
+		if ((imageView != null) && (url != null) && (!url.equals("")))
+		{
+			if (bitmap == null)
+			{
+				bitmap = FinalBitmap.create(imageView.getContext());
+				bitmap.configLoadingImage(resId);
+			}
+
+			bitmap.display(imageView, url);
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+
+
+	@Override
+	public Boolean setPic(ImageView imageView, int srcId)
+	{
+		if ((imageView != null))
+		{
+			imageView.setImageResource(srcId);
+			imageView.setTag("null");
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+
+}

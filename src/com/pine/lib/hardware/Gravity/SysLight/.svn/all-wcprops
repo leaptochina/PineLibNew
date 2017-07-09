@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/ncar/!svn/ver/29/trunk/PineLib/src/com/pine/lib/hardware/Gravity/SysLight
+END
+LightDirect.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/ncar/!svn/ver/3/trunk/PineLib/src/com/pine/lib/hardware/Gravity/SysLight/LightDirect.java
+END
+ReadGravityBySys.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/ncar/!svn/ver/29/trunk/PineLib/src/com/pine/lib/hardware/Gravity/SysLight/ReadGravityBySys.java
+END

@@ -1,0 +1,35 @@
+IMEI(可伪造)
+IMSI(可伪造)
+SIM卡序列号(可伪造)
+手机号码(可伪造)
+来，去电号码
+SIM卡信息
+当前蜂窝网络信息
+(以上七者均来自Android.Permission.READ_PHONE_STATE)
+
+GPS定位信息 (可伪造，来自Android.Permission.FINE_LOCATION)
+
+基站定位   (可伪造，来自Android.Permission.COARSE_LOCATION)
+
+系统自带浏览器的历史，书签(Android.Permission.BOOKMARKS)
+
+联系人    (android.permission.READ_CONTACTS)
+
+通话记录   (android.permission.READ_CONTACTS)
+
+系统日志   (android.permission.READ_LOGS)
+
+当前账户列表   (android.permission.GET_ACCOUNTS)
+
+当前账户的授权码  (android.permission.USE_CREDENTIALS)
+
+日历    android.permission.READ_CALENDAR
+
+短信，彩信 (可能与这5个权限有关)
+android.permission.READ_SMS
+android.permission.RECEIVE_SMS
+android.permission.SEND_SMS
+android.permission.WRITE_SMS
+android.permission.RECEIVE_MMS
+
+

@@ -1,0 +1,64 @@
+FindViewByString：
+
+ int identifer = context.getResources().getIdentifier(“name”, "id",context.getPackageName());
+
+
+反射设置变量
+public void setData(String key, String value)
+{
+try {
+Field cc = getClass().getField(key);
+cc.set(this, value);
+G.log(this, cc.toString());
+} catch (NoSuchFieldException e) {
+// TODO Auto-generated catch block
+e.printStackTrace();
+}catch (IllegalAccessException e) {
+// TODO Auto-generated catch block
+e.printStackTrace();
+} catch (IllegalArgumentException e) {
+// TODO Auto-generated catch block
+e.printStackTrace();
+}
+}
+
+
+
+
+public void setView(View view)
+{
+this.view = view;
+for (int i = 0; i < valueArr.size(); i++) {
+KeyValue kv = valueArr.get(i);
+View v = view.findViewById(kv.key);
+
+try {
+Class c;
+c = Class.forName(kv.objectType);
+Object cc;// = c.newInstance();
+cc = c.cast(v);
+Method md = c.getDeclaredMethod(kv.callFunctionName, java.lang.CharSequence.class);
+//Method[] md = c.getDeclaredMethods();
+md.invoke(cc, kv.value);
+} catch (Exception e) {
+// TODO Auto-generated catch block
+e.printStackTrace();
+}
+}
+G.log(this, "刷新UI 成功 ");
+}
+
+
+ 
+Class：反射调用！！！！！！！！！！！！
+
+ try {
+Class c;
+c = Class.forName("com.a");
+Object cc = c.newInstance();
+Method md = c.getMethod("abc", String.class);
+md.invoke(cc, "123");
+} catch (Exception e) {
+// TODO Auto-generated catch block
+e.printStackTrace();
+} 

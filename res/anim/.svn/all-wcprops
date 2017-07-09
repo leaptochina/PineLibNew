@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/ncar/!svn/ver/4/trunk/PineLib/res/anim
+END
+out_to_right.xml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/ncar/!svn/ver/4/trunk/PineLib/res/anim/out_to_right.xml
+END
+out_to_left.xml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/ncar/!svn/ver/4/trunk/PineLib/res/anim/out_to_left.xml
+END
+out_to_none.xml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/ncar/!svn/ver/4/trunk/PineLib/res/anim/out_to_none.xml
+END
+in_from_down.xml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/ncar/!svn/ver/4/trunk/PineLib/res/anim/in_from_down.xml
+END
+out_to_up.xml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/ncar/!svn/ver/4/trunk/PineLib/res/anim/out_to_up.xml
+END
+in_from_right.xml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/ncar/!svn/ver/4/trunk/PineLib/res/anim/in_from_right.xml
+END
+in_from_left.xml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/ncar/!svn/ver/4/trunk/PineLib/res/anim/in_from_left.xml
+END
+in_from_none.xml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/ncar/!svn/ver/4/trunk/PineLib/res/anim/in_from_none.xml
+END
+out_to_down.xml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/ncar/!svn/ver/4/trunk/PineLib/res/anim/out_to_down.xml
+END
+in_from_up.xml
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/ncar/!svn/ver/4/trunk/PineLib/res/anim/in_from_up.xml
+END

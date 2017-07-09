@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\BEN\\GIT\\TradeAndroid\\Trade\\PineLib\\build\\intermediates\\res\\merged\\debug\\layout-land\\message_box_large.xml",
+        "source": "C:\\BEN\\GIT\\TradeAndroid\\Trade\\PineLib\\res\\layout-land\\message_box_large.xml"
+    },
+    {
+        "merged": "C:\\BEN\\GIT\\TradeAndroid\\Trade\\PineLib\\build\\intermediates\\res\\merged\\debug\\layout-land\\debug_runtime_key_dialog.xml",
+        "source": "C:\\BEN\\GIT\\TradeAndroid\\Trade\\PineLib\\res\\layout-land\\debug_runtime_key_dialog.xml"
+    },
+    {
+        "merged": "C:\\BEN\\GIT\\TradeAndroid\\Trade\\PineLib\\build\\intermediates\\res\\merged\\debug\\layout-land\\debug_runtime_notice_dialog.xml",
+        "source": "C:\\BEN\\GIT\\TradeAndroid\\Trade\\PineLib\\res\\layout-land\\debug_runtime_notice_dialog.xml"
+    },
+    {
+        "merged": "C:\\BEN\\GIT\\TradeAndroid\\Trade\\PineLib\\build\\intermediates\\res\\merged\\debug\\layout-land\\debug_runtime_err_dialog.xml",
+        "source": "C:\\BEN\\GIT\\TradeAndroid\\Trade\\PineLib\\res\\layout-land\\debug_runtime_err_dialog.xml"
+    }
+]

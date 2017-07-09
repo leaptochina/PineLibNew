@@ -1,0 +1,53 @@
+apply plugin: 'android-library'
+
+dependencies {
+    compile fileTree(include: '*.jar', dir: 'libs')
+    compile files('libs/afinal.jar')
+    compile files('libs/baidutongji_3_5.jar')
+    compile files('libs/gson-2.2.4.jar')
+    compile files('libs/picasso-2.3.4.jar')
+    compile files('libs/universal-image-loader-1.9.3.jar')
+    compile files('libs/Volley.jar')
+    compile files('libs/xUtils-2.6.8.jar')
+
+    compile 'com.lcodecorex:tkrefreshlayout:1.0.3'  //下拉刷新
+}
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.0'
+    defaultConfig {
+        multiDexEnabled true
+    }
+    android {
+        useLibrary 'org.apache.http.legacy'
+        lintOptions {
+            abortOnError false
+        }
+    }
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            resources.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+        }
+
+
+
+        // Move the tests to tests/java, tests/res, etc...
+        instrumentTest.setRoot('tests')
+
+        // Move the build types to build-types/<type>
+        // For instance, build-types/debug/java, build-types/debug/AndroidManifest.xml, ...
+        // This moves them out of them default location under src/<type>/... which would
+        // conflict with src/ being used by the main source set.
+        // Adding new build types or product flavors should be accompanied
+        // by a similar customization.
+        debug.setRoot('build-types/debug')
+        release.setRoot('build-types/release')
+    }
+}

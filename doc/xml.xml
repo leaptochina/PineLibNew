@@ -1,0 +1,9 @@
+横屏锁定
+android:screenOrientation，属性取值landscape为固定横屏、portrait为固定纵屏幕。
+setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE););//强制为横屏
+setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);//竖屏
+
+
+
+去掉titlebar
+  android:theme="@android:style/Theme.Translucent.NoTitleBar"

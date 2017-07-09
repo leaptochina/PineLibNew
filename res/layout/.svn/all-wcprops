@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/ncar/!svn/ver/125/trunk/PineLib/res/layout
+END
+wait_box_fullscreen.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/ncar/!svn/ver/4/trunk/PineLib/res/layout/wait_box_fullscreen.xml
+END
+debug_runtime_key_dialog.xml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/ncar/!svn/ver/26/trunk/PineLib/res/layout/debug_runtime_key_dialog.xml
+END
+debug_runtime_notice_dialog.xml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/ncar/!svn/ver/4/trunk/PineLib/res/layout/debug_runtime_notice_dialog.xml
+END
+wait_box_oneline.xml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/ncar/!svn/ver/4/trunk/PineLib/res/layout/wait_box_oneline.xml
+END
+message_box_large.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/ncar/!svn/ver/125/trunk/PineLib/res/layout/message_box_large.xml
+END
+debug_runtime_flywindow.xml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/ncar/!svn/ver/4/trunk/PineLib/res/layout/debug_runtime_flywindow.xml
+END
+err_report_windows.xml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/ncar/!svn/ver/4/trunk/PineLib/res/layout/err_report_windows.xml
+END
+message_box.xml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/ncar/!svn/ver/4/trunk/PineLib/res/layout/message_box.xml
+END
+debug_runtime_err_dialog.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/ncar/!svn/ver/4/trunk/PineLib/res/layout/debug_runtime_err_dialog.xml
+END
