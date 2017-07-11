@@ -18,6 +18,7 @@ public class SwipeMenuItem {
     private String title;
     private Drawable icon;
     private Drawable background;
+    private Object tag;
     private int titleColor;
     private int titleSize;
     private int width;
@@ -92,6 +93,14 @@ public class SwipeMenuItem {
 
     public void setWidth(int width) {
         this.width = width;
+    }
+
+    public void setTag(Object o)  {
+        this.tag = tag;
+    }
+
+    public Object getTag()  {
+        return tag;
     }
 
 }
