@@ -42,9 +42,12 @@ public class G
 
 	public static void init()
 	{
-		add("com.pine.nzbbs");
-		add("com.pine.lib.net.pic");
-		
+		add("com.pine.lib.net.getsourcecode"); //显示网络日志
+
+
+		add("com.mychild.trade");
+
+
 
 		isInit = true;
 	}
