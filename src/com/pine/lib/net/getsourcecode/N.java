@@ -35,7 +35,7 @@ public class N extends AjaxCallBack<Object> {
 
     public void post(String url, AjaxParams ajaxParams, OnNetFinish onNetFinish, String tag)
     {
-        g.d("post:" + tag + url);
+        g.d("post:" + tag + ", " + url);
         finalHttp.post(url, ajaxParams, new MyNetworkCallback(url, onNetFinish, tag));
     }
 

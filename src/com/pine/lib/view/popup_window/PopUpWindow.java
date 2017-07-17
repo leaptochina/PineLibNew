@@ -15,6 +15,8 @@ import com.pine.lib.func.intentcall.I;
 import com.pine.lib.view.UIInject.UiInject;
 import com.pine.lib.view.UIInject.interfaces.InjectView;
 
+import org.w3c.dom.Text;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,8 +32,10 @@ public class PopUpWindow extends PineActivity implements AdapterView.OnItemClick
 
 
     private String title = "";
+    private TextView cancel = null;
+    private TextView done = null;
     private Boolean canBeCanceled = true;
-    private Boolean singleChecked = true;
+    private Boolean isDoneShow = true;
     private String callbackBroadcast = "";
     private ArrayList<String> values = new ArrayList<String>();
     private ArrayList<String> key = new ArrayList<String>();
@@ -47,13 +51,16 @@ public class PopUpWindow extends PineActivity implements AdapterView.OnItemClick
 
         title = intent.getStringExtra("title");
         canBeCanceled = intent.getBooleanExtra("canBeCanceled", true);
-        singleChecked = intent.getBooleanExtra("singleChecked", true);
+        isDoneShow = intent.getBooleanExtra("isDoneShow", true);
         callbackBroadcast = intent.getStringExtra("callbackBroadcast");
         values = intent.getStringArrayListExtra("values");
         key = intent.getStringArrayListExtra("key");
 
         tvTitle = (TextView)findViewById(R.id.title);
         lists = (ListView)findViewById(R.id.lists);
+        cancel = (TextView)findViewById(R.id.cancel);
+        done = (TextView)findViewById(R.id.done);
+
 
         tvTitle.setText(title);
 
@@ -62,13 +69,33 @@ public class PopUpWindow extends PineActivity implements AdapterView.OnItemClick
 
         lists.setOnItemClickListener(this);
 
+        cancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                BroadCastManager.i().send(callbackBroadcast, "");
+                finish();
+            }
+        });
+
+        done.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                BroadCastManager.i().send(callbackBroadcast, "0");
+                finish();
+            }
+        });
+
+        if (!canBeCanceled) cancel.setVisibility(View.GONE);
+        if (!isDoneShow) done.setVisibility(View.GONE);
+
     }
 
 
-    public static void show(Boolean canBeCanceled, Boolean singleChecked, String title, String callbackBroadcast, ArrayList<String> key, ArrayList<String> values) {
+    public static void show(Boolean canBeCanceled, Boolean isDoneShow, String title, String callbackBroadcast, ArrayList<String> key, ArrayList<String> values) {
         Intent intent = new Intent(A.a(), PopUpWindow.class);
         intent.putExtra("canBeCanceled", canBeCanceled);
-        intent.putExtra("singleChecked", singleChecked);
+        intent.putExtra("isDoneShow", isDoneShow);
         intent.putExtra("title", title);
         intent.putExtra("callbackBroadcast", callbackBroadcast);
         intent.putStringArrayListExtra("key", key);

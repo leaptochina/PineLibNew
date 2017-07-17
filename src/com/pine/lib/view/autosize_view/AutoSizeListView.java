@@ -1,4 +1,4 @@
-package com.pine.lib.view;
+package com.pine.lib.view.autosize_view;
 
 import android.content.Context;
 import android.util.AttributeSet;
