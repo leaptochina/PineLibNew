@@ -1,5 +1,8 @@
 package com.pine.lib.net.getsourcecode;
 
+import org.apache.http.client.CookieStore;
+import org.apache.http.impl.client.DefaultHttpClient;
+
 import afinal.http.AjaxCallBack;
 
 /**
