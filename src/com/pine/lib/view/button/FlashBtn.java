@@ -21,7 +21,7 @@ public class FlashBtn extends Button
 		super(context, attrs);
 		M.i().addClass(this);
 	}
-//test
+//test1
 
 	/**
 	 * 
