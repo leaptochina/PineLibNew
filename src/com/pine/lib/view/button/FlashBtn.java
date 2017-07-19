@@ -21,7 +21,7 @@ public class FlashBtn extends Button
 		super(context, attrs);
 		M.i().addClass(this);
 	}
-
+//冲突
 	/**
 	 * 
 	 * 开启View闪烁效果
