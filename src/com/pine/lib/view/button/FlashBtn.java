@@ -1,4 +1,4 @@
-package com.pine.lib.view.button;
+﻿package com.pine.lib.view.button;
 
 import com.pine.lib.func.debug.M;
 import com.pine.lib.func.myTimer.MyTimer;
@@ -21,6 +21,7 @@ public class FlashBtn extends Button
 		super(context, attrs);
 		M.i().addClass(this);
 	}
+//test
 
 	/**
 	 * 
