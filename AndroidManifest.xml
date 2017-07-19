@@ -35,6 +35,7 @@
     <application>
         <activity
             android:name=".view.popup_window.PopUpWindow"
+            android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <meta-data
             android:name="QuDao"
