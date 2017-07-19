@@ -63,7 +63,7 @@ public class SwitchButton extends View implements
 	 */
 	public void setIsOpen(Boolean isOpen)
 	{
-		mSwitchOn = isOpen;
+		mSwitchOn = !isOpen;
 		invalidate();
 	}
 
@@ -198,7 +198,7 @@ public class SwitchButton extends View implements
 					mSwitchOn = !mSwitchOn;
 					if (mListener != null)
 					{
-						mListener.onChange(this, mSwitchOn);
+						mListener.onChange(this, !mSwitchOn);
 					}
 					invalidate();
 					mDeltX = 0;
@@ -242,7 +242,7 @@ public class SwitchButton extends View implements
 		mSwitchOn = !mSwitchOn;
 		if (mListener != null)
 		{
-			mListener.onChange(this, mSwitchOn);
+			mListener.onChange(this, !mSwitchOn);
 		}
 		invalidate();
 		mDeltX = 0;

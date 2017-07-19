@@ -6,4 +6,7 @@
 	<string name="viewpager_indicator">%1$d/%2$d</string>
     <string name="done">Done</string>
     <string name="cancel">Cancel</string>
+
+
+    <string name="can_not_get_version">Cannot Get Version Number</string>
 </resources>

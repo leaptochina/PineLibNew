@@ -114,7 +114,7 @@ public class ImageDetailFragment extends Fragment {
 //			@Override
 //			public void onLoadingFailed(String imageUri, View view, FailReason failReason) {
 //				String message = null;
-//				switch (failReason.getType()) {
+//				switch_btn_dot (failReason.getType()) {
 //				case IO_ERROR:
 //					message = "下载错误";
 //					break;

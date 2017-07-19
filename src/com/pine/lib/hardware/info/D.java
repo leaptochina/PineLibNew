@@ -6,6 +6,7 @@ import android.content.pm.PackageManager;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
 
+import com.pine.lib.R;
 import com.pine.lib.base.activity.A;
 import com.pine.lib.hardware.info.screen.ScreenInfo;
 import com.pine.lib.math.MD5.MD5;
@@ -346,7 +347,7 @@ public class D
 		{
 
 		}
-		return "无法获取版本号";
+		return A.c().getResources().getString(R.string.can_not_get_version);
 	}
 
 
