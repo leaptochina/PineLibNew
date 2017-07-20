@@ -20,6 +20,11 @@ public interface SetPicInterface
 	public Boolean setPic(ImageView imageView, int srcId);
 
 	/**
+	 * 设置图片
+	 */
+	public Boolean setPic(ImageView imageView, String localUrl);
+
+	/**
 	 * 设置加载中的图标资源图标
 	 */
 	public SetPicInterface setLoadingPic(int resId);

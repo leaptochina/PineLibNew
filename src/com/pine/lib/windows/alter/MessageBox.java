@@ -18,6 +18,7 @@ import com.pine.lib.base.activity.A;
 import com.pine.lib.func.debug.G;
 import com.pine.lib.func.debug.M;
 import com.pine.lib.windows.alter.style.AbsAlertDialog;
+import com.pine.lib.windows.alter.style.IPhoneDialog;
 import com.pine.lib.windows.alter.style.LargeMsgDialog;
 import com.pine.lib.windows.alter.style.SelectDialog;
 
@@ -312,6 +313,10 @@ public class MessageBox implements OnClickListener, OnKeyListener,
 		else if (style == WindowsStyle.LargeMsgBox)
 		{
 			dialog = new LargeMsgDialog(context, R.style.dialog);
+		}
+		else if (style == WindowsStyle.IPhone)
+		{
+			dialog = new IPhoneDialog(context, R.style.dialog);
 		}
 
 		dialog.setCanceledOnTouchOutside(cancelable);// 设置点击Dialog外部任意区域关闭Dialog

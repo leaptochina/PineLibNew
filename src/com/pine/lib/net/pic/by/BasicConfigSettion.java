@@ -1,7 +1,13 @@
 package com.pine.lib.net.pic.by;
 
+import android.graphics.BitmapFactory;
+import android.widget.ImageView;
+
 import com.pine.lib.R;
 import com.pine.lib.net.pic.SetPicInterface;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 
 public abstract class BasicConfigSettion implements SetPicInterface
 {
@@ -19,6 +25,19 @@ public abstract class BasicConfigSettion implements SetPicInterface
 	{
 		this.loading = resId;
 		return this;
+	}
+
+	@Override
+	public Boolean setPic(ImageView imageView, String localUrl) {
+		try {
+			FileInputStream fis = new FileInputStream(localUrl);
+			imageView.setImageBitmap(BitmapFactory.decodeStream(fis));  ///把流转化为Bitmap图片
+			return true;
+
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+			return false;
+		}
 	}
 
 

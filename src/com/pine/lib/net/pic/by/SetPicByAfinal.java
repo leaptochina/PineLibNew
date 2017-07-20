@@ -70,4 +70,6 @@ public class SetPicByAfinal extends BasicConfigSettion
 		}
 	}
 
+
+
 }
