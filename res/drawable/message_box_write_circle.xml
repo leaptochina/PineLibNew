@@ -2,7 +2,7 @@
 <!-- 圆角背景图 -->
 <shape xmlns:android="http://schemas.android.com/apk/res/android" >
 
-    <solid android:color="#d8FFFFFF" />
+    <solid android:color="#EFFFFFFF" />
 
     <corners
         android:bottomLeftRadius="10px"

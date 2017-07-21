@@ -109,6 +109,14 @@ public class PineFragmentActivity extends FragmentActivity implements
 
 	}
 
+	/**
+	 * 向右滑动 - 关闭窗口
+	 */
+	@Override
+	public void OnFlingClose()
+	{
+
+	}
 
 	/**
 	 * 向右滑动 - 手势识别

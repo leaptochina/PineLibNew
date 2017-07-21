@@ -8,8 +8,8 @@
         android:layout_width="@dimen/w80b"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_margin="@dimen/h3b"
         android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/h3b"
         android:background="@drawable/message_box_write_circle">
 
         <RelativeLayout
@@ -59,12 +59,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/h7b"
                 android:layout_weight="1"
-                android:background="#d8FFFFFF"
                 android:gravity="center"
                 android:text="TextView"
-
                 android:textColor="@color/blue"
                 android:textSize="@dimen/w5b" />
+
+            <View
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray" />
 
             <TextView
                 android:id="@+id/btn2"
@@ -72,32 +76,39 @@
                 android:layout_height="@dimen/h7b"
                 android:layout_marginTop="1dp"
                 android:layout_weight="1"
-                android:background="#d8FFFFFF"
 
                 android:gravity="center"
                 android:text="TextView"
                 android:textColor="@color/blue"
                 android:textSize="@dimen/w5b" />
 
+            <View
+                android:id="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray" />
             <TextView
                 android:id="@+id/btn3"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/h7b"
                 android:layout_marginTop="1dp"
                 android:layout_weight="1"
-                android:background="#d8FFFFFF"
                 android:gravity="center"
                 android:text="TextView"
                 android:textColor="@color/blue"
                 android:textSize="@dimen/w5b" />
 
+            <View
+                android:id="@+id/line3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray" />
             <TextView
                 android:id="@+id/btn4"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/h7b"
                 android:layout_marginTop="1dp"
                 android:layout_weight="1"
-                android:background="#d8FFFFFF"
                 android:gravity="center"
                 android:text="TextView"
                 android:textColor="@color/blue"

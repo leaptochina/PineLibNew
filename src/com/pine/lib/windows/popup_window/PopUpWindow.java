@@ -1,4 +1,4 @@
-package com.pine.lib.view.popup_window;
+package com.pine.lib.windows.popup_window;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,11 +12,8 @@ import com.pine.lib.base.activity.A;
 import com.pine.lib.base.activity.PineActivity;
 import com.pine.lib.func.broadcast.BroadCastManager;
 import com.pine.lib.func.intentcall.I;
-import com.pine.lib.view.UIInject.UiInject;
-import com.pine.lib.view.UIInject.interfaces.InjectView;
 
-import org.w3c.dom.Text;
-
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -37,8 +34,8 @@ public class PopUpWindow extends PineActivity implements AdapterView.OnItemClick
     private Boolean canBeCanceled = true;
     private Boolean isDoneShow = true;
     private String callbackBroadcast = "";
-    private ArrayList<String> values = new ArrayList<String>();
-    private ArrayList<String> key = new ArrayList<String>();
+    private List<PopupBean> values = new ArrayList<PopupBean>();
+
 
     private PopUpWindowAdapter popUpWindowAdapter = null;
 
@@ -53,13 +50,13 @@ public class PopUpWindow extends PineActivity implements AdapterView.OnItemClick
         canBeCanceled = intent.getBooleanExtra("canBeCanceled", true);
         isDoneShow = intent.getBooleanExtra("isDoneShow", true);
         callbackBroadcast = intent.getStringExtra("callbackBroadcast");
-        values = intent.getStringArrayListExtra("values");
-        key = intent.getStringArrayListExtra("key");
+        values = (List<PopupBean>) intent.getSerializableExtra("values");
 
-        tvTitle = (TextView)findViewById(R.id.title);
-        lists = (ListView)findViewById(R.id.lists);
-        cancel = (TextView)findViewById(R.id.cancel);
-        done = (TextView)findViewById(R.id.done);
+
+        tvTitle = (TextView) findViewById(R.id.title);
+        lists = (ListView) findViewById(R.id.lists);
+        cancel = (TextView) findViewById(R.id.cancel);
+        done = (TextView) findViewById(R.id.done);
 
 
         tvTitle.setText(title);
@@ -80,8 +77,16 @@ public class PopUpWindow extends PineActivity implements AdapterView.OnItemClick
         done.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                BroadCastManager.i().send(callbackBroadcast, "0");
+                String r = "";
+                for(PopupBean vs : values)
+                {
+                    if (vs.checked)
+                    {
+                        r += vs.key + ",";
+                    }
+                }
+                if (r.length() > 0) r = r.substring(0, r.length() - 1);
+                BroadCastManager.i().send(callbackBroadcast, r);
                 finish();
             }
         });
@@ -92,14 +97,14 @@ public class PopUpWindow extends PineActivity implements AdapterView.OnItemClick
     }
 
 
-    public static void show(Boolean canBeCanceled, Boolean isDoneShow, String title, String callbackBroadcast, ArrayList<String> key, ArrayList<String> values) {
+    public static void show(Boolean canBeCanceled, Boolean isDoneShow, String title, String callbackBroadcast, List<PopupBean> values) {
         Intent intent = new Intent(A.a(), PopUpWindow.class);
         intent.putExtra("canBeCanceled", canBeCanceled);
         intent.putExtra("isDoneShow", isDoneShow);
         intent.putExtra("title", title);
         intent.putExtra("callbackBroadcast", callbackBroadcast);
-        intent.putStringArrayListExtra("key", key);
-        intent.putStringArrayListExtra("values", values);
+        intent.putExtra("values", (Serializable) values);
+
 
         A.a().startActivity(intent);
         I.i(R.anim.in_from_down, R.anim.out_to_none);
@@ -107,8 +112,13 @@ public class PopUpWindow extends PineActivity implements AdapterView.OnItemClick
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+        if (isDoneShow) {
+            values.get(i).checked = ! values.get(i).checked;
+            popUpWindowAdapter.notifyDataSetChanged();
 
-        BroadCastManager.i().send(callbackBroadcast, key.get(i));
-        finish();
+        } else {
+            BroadCastManager.i().send(callbackBroadcast, values.get(i).key);
+            finish();
+        }
     }
 }

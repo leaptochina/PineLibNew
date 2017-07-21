@@ -112,6 +112,14 @@ public class PineActivity extends Activity implements OnNetworkChange,
 
 
     /**
+     * 向右滑动 - 关闭手势
+     */
+    @Override
+    public void OnFlingClose() {
+
+    }
+
+    /**
      * 向右滑动 - 手势识别
      */
     @Override
@@ -157,5 +165,7 @@ public class PineActivity extends Activity implements OnNetworkChange,
     public void networkChange(NetState netState) {
         // 请在子类中重写
     }
+
+
 
 }

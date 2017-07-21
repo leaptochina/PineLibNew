@@ -1,8 +1,10 @@
-package com.pine.lib.view.popup_window;
+package com.pine.lib.windows.popup_window;
 
+import android.media.Image;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.pine.lib.R;
@@ -19,9 +21,9 @@ import java.util.List;
 
 public class PopUpWindowAdapter extends BaseAdapter {
 
-    private List<String> data = new ArrayList<>();
+    private List<PopupBean> data = new ArrayList<>();
 
-    public PopUpWindowAdapter(List<String> data) {
+    public PopUpWindowAdapter(List<PopupBean> data) {
         this.data = data;
 
     }
@@ -48,9 +50,16 @@ public class PopUpWindowAdapter extends BaseAdapter {
                     R.layout.popup_window_adapter, null);
         }
 
-        TextView textView = (TextView)convertView.findViewById(R.id.title);
-        textView.setText(data.get(i));
+        TextView textView = (TextView) convertView.findViewById(R.id.title);
+        ImageView img = (ImageView) convertView.findViewById(R.id.checkbox);
 
+
+        textView.setText(data.get(i).value);
+        if (data.get(i).checked) {
+            img.setVisibility(View.VISIBLE);
+        } else {
+            img.setVisibility(View.INVISIBLE);
+        }
 
         return convertView;
     }

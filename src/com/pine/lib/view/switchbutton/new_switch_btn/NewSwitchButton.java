@@ -74,6 +74,11 @@ public class NewSwitchButton extends RelativeLayout implements View.OnClickListe
         init(context);
     }
 
+    public Boolean isLeft()
+    {
+        return isLeft;
+    }
+
     public void setIsLeft(Boolean isLeft) {
         if (!this.isLeft) {
             animation(isLeft, 0);
@@ -124,4 +129,6 @@ public class NewSwitchButton extends RelativeLayout implements View.OnClickListe
     public void onAnimationRepeat(Animation animation) {
 
     }
+
+
 }

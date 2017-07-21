@@ -43,8 +43,11 @@ public class MessageBox implements OnClickListener, OnKeyListener,
 	private TextView btn2;
 	private TextView btn3;
 	private TextView btn4;
+	private View view1;
+	private View view2;
+	private View view3;
 	private AbsAlertDialog dialog;
-	private Boolean cancelable = false;
+	private Boolean cancelable = true;
 	private WindowsStyle style = WindowsStyle.BlackNoFrame;
 	private String message;
 	private List<String> buttons;
@@ -105,8 +108,6 @@ public class MessageBox implements OnClickListener, OnKeyListener,
 	/**
 	 * 通过这里显示提示框
 	 * 
-	 * @param message
-	 * @param buttons
 	 */
 	public void show(String message)
 	{
@@ -117,8 +118,6 @@ public class MessageBox implements OnClickListener, OnKeyListener,
 	/**
 	 * 通过这里显示提示框
 	 * 
-	 * @param message
-	 * @param buttons
 	 */
 	public void show(String message, String btn)
 	{
@@ -131,8 +130,6 @@ public class MessageBox implements OnClickListener, OnKeyListener,
 	/**
 	 * 通过这里显示提示框
 	 * 
-	 * @param message
-	 * @param buttons
 	 */
 	public void show(String message, String btn1, String btn2)
 	{
@@ -146,8 +143,6 @@ public class MessageBox implements OnClickListener, OnKeyListener,
 	/**
 	 * 通过这里显示提示框
 	 * 
-	 * @param message
-	 * @param buttons
 	 */
 	public void show(String message, String btn1, String btn2, String btn3)
 	{
@@ -162,8 +157,6 @@ public class MessageBox implements OnClickListener, OnKeyListener,
 	/**
 	 * 通过这里显示提示框
 	 * 
-	 * @param message
-	 * @param buttons
 	 */
 	public void show(String message, String btn1, String btn2, String btn3,
 			String btn4)
@@ -333,6 +326,9 @@ public class MessageBox implements OnClickListener, OnKeyListener,
 		btn2 = (TextView) view.findViewById(R.id.btn2);
 		btn3 = (TextView) view.findViewById(R.id.btn3);
 		btn4 = (TextView) view.findViewById(R.id.btn4);
+		view1 = (View) view.findViewById(R.id.line1);
+		view2 = (View) view.findViewById(R.id.line2);
+		view3 = (View) view.findViewById(R.id.line3);
 
 		mainMassage.setText(message);
 
@@ -340,22 +336,28 @@ public class MessageBox implements OnClickListener, OnKeyListener,
 		btn2.setVisibility(View.GONE);
 		btn3.setVisibility(View.GONE);
 		btn4.setVisibility(View.GONE);
+		if (view1 != null) view1.setVisibility(View.GONE);
+		if (view2 != null) view2.setVisibility(View.GONE);
+		if (view3 != null) view3.setVisibility(View.GONE);
 
 		btn1.setText(buttons.get(0));
 		if (buttons.size() >= 2)
 		{
 			btn2.setText(buttons.get(1));
 			btn2.setVisibility(View.VISIBLE);
+			view1.setVisibility(View.VISIBLE);
 		}
 		if (buttons.size() >= 3)
 		{
 			btn3.setText(buttons.get(2));
 			btn3.setVisibility(View.VISIBLE);
+			view2.setVisibility(View.VISIBLE);
 		}
 		if (buttons.size() >= 4)
 		{
 			btn4.setText(buttons.get(3));
 			btn4.setVisibility(View.VISIBLE);
+			view3.setVisibility(View.VISIBLE);
 		}
 
 		btn1.setOnClickListener(this);
